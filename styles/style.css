@@ -5,6 +5,8 @@ body, html {
     font-family: Helvetica, sans-serif;
 }
 
+
+
 /* Header */
 .navLink {
     position: absolute;
@@ -29,12 +31,17 @@ body, html {
     padding: 0.5rem;
 }
 
+
+
 /* Homepage Layout */
 .homeContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
     width: 100vw;
+    /* background: linear-gradient(120deg, rgba(1,1,1,1) 44%, rgba(176,9,31,1) 96%); */
+    background: radial-gradient(at 0% 30%,#841b1b 10rem, black);
+
 }
 
 .leftContainerHome {
@@ -46,7 +53,6 @@ body, html {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-
 }
 
 .rightContainerHome {
@@ -61,12 +67,14 @@ h1 {
     justify-self: center;
     margin-bottom: 0;
     font-size: 4rem;
+    color: white;
 }
 
 p {
     justify-self: center;
     padding: 1rem;
     text-align: center;
+    color: white;
 }
 
 .buttonHomeStart {

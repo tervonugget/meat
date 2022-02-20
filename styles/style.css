@@ -6,6 +6,10 @@ body, html {
 }
 
 /* Homepage Layout */
+.logo {
+    max-width: 2rem;
+}
+
 .homeContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;

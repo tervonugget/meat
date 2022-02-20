@@ -10,6 +10,18 @@ body, html {
     position: absolute;
     margin-top: 1rem;
     padding-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.navLink:visited {
+    color: black;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+    color: red;
 }
 
 .logo {
@@ -66,11 +78,13 @@ p {
     border-radius: 1rem;
     padding: 1rem;
     font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
 }
 
 .buttonHomeStart:hover {
-    background-color: #666;
-    color: white;
+    color: red;
     transition-duration: 0.5s;
 }
 
@@ -82,10 +96,10 @@ p {
     border-radius: 1rem;
     padding: 1rem;
     font-weight: bold;
+    border: none;
 }
 
 .buttonHomeAbout:hover {
-    background-color: #666;
-    color: white;
+    color: red;
     transition-duration: 0.5s;
 }

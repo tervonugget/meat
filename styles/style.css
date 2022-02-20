@@ -1,4 +1,79 @@
 body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Homepage Layout */
+.homeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftContainerHome {
+    display: grid;
+    align-items: center;
+}
+
+.leftContainerHomeContentTile {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+}
+
+.rightContainerHome {
+    display: grid;
+    align-self: center;
+}
+
+
+
+/* Homepage Styling */
+h1 {
+    justify-self: center;
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
+p {
+    justify-self: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.buttonHomeStart {
+    justify-self: center;
+    align-self: center;
+    margin: 1rem;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.buttonHomeStart:hover {
+    background-color: #666;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.buttonHomeAbout {
+    justify-self: center;
+    align-self: center;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.buttonHomeAbout:hover {
+    background-color: #666;
+    color: white;
+    transition-duration: 0.5s;
 }

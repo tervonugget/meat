@@ -5,11 +5,19 @@ body, html {
     font-family: Helvetica, sans-serif;
 }
 
-/* Homepage Layout */
-.logo {
-    max-width: 2rem;
+/* Header */
+.navLink {
+    position: absolute;
+    margin-top: 1rem;
+    padding-left: 1rem;
 }
 
+.logo {
+    max-width: 2rem;
+    padding: 0.5rem;
+}
+
+/* Homepage Layout */
 .homeContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;

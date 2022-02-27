@@ -3,6 +3,19 @@ var template_map = document.createElement("template"); //<template> </template> 
 
 //To-do - CREATE THE UI HERE!
 template_map.innerHTML = `
+<div class="map-container">
+    <img id="map" src="./assets/animals/pig-chart.svg">
+</div>
+
+<style>
+    .map-container {
+        background-color: red;
+    }
+
+    #map {
+        background-color: red;
+    }
+</style>
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)

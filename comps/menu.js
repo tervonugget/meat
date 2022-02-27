@@ -1,12 +1,41 @@
 //MUST HAVE - CREATE A TEMPLATE TAG
-var template_comp = document.createElement("template"); //<template> </template> RULE
+var template_menu = document.createElement("template"); //<template> </template> RULE
 
 //To-do - CREATE THE UI HERE!
-template_comp.innerHTML = `
+template_menu.innerHTML = `
+<div class="menu-container">
+    <div class="name-container">
+        <div id="name">Cow</div>
+    </div>
+</div>
+
+<style>
+    .menu-container {
+        display: inline-flex;
+    }
+
+    .name-container {
+        background-color: #101010;
+        border-radius: 40%;
+        padding: 1rem;  
+    }
+
+    .name-container:hover {
+        background-color: blue;
+    }
+
+    #name {
+        color: white;
+    }
+
+    #name:hover {
+        text-decoration: underline;
+    }
+</style>
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
-class TheComp extends HTMLElement {
+class AnimalMenu extends HTMLElement {
 
     //MUST HAVE - CREATE A CONSTRUCTOR TO DO INITAL ASSOCIATIONS
     constructor(){
@@ -18,11 +47,11 @@ class TheComp extends HTMLElement {
 
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
-        this.shadowRoot.appendChild(template_comp.content.cloneNode(true)); //use the template to make a clone
+        this.shadowRoot.appendChild(template_menu.content.cloneNode(true)); //use the template to make a clone
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
 }
 
 //MUST HAVE - define the tag for the custom elements
-customElements.define("the-comp", TheComp)
+customElements.define("animal-menu", AnimalMenu)

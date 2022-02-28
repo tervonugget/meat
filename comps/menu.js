@@ -48,6 +48,7 @@ class AnimalMenu extends HTMLElement {
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
         this.shadowRoot.appendChild(template_menu.content.cloneNode(true)); //use the template to make a clone
+        this.shadowRoot.querySelector(".name-container > #name").innerHTML = (this.getAttribute("name"))
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!

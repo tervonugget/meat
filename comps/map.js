@@ -9,15 +9,13 @@ template_map.innerHTML = `
 
 <style>
     .map-container {
-        position: absolute;
-        width: 100vw;
-        z-index: -1;
-        left: 0px;
-        top: 5rem;
+        display: grid;
+        place-content: center;
     }
 
     #map {
         background-color: blue;
+        height: 25rem;
     }
 </style>
 `;

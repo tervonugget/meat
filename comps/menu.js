@@ -49,6 +49,10 @@ class AnimalMenu extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_menu.content.cloneNode(true)); //use the template to make a clone
         this.shadowRoot.querySelector(".name-container > #name").innerHTML = (this.getAttribute("name"))
+        this.shadowRoot.querySelector(".menu-container").onclick = () => {
+            document.querySelector("#map-bg").changeMap(`./assets/animals/${this.getAttribute("name")}.svg`);
+            console.log("test")
+        }
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!

@@ -9,11 +9,15 @@ template_map.innerHTML = `
 
 <style>
     .map-container {
-        background-color: red;
+        position: absolute;
+        width: 100vw;
+        z-index: -1;
+        left: 0px;
+        top: 5rem;
     }
 
     #map {
-        background-color: red;
+        background-color: blue;
     }
 </style>
 `;
@@ -35,6 +39,9 @@ class AnimalMap extends HTMLElement {
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+    changeMap(map="./assets/animals/pig-chart.svg") {
+        this.shadowRoot.querySelector(".map-container > img").src = map;
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements

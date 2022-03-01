@@ -4,7 +4,7 @@ var template_map = document.createElement("template"); //<template> </template> 
 //To-do - CREATE THE UI HERE!
 template_map.innerHTML = `
 <div class="map-container">
-    <img id="map" src="./assets/animals/pig-chart.svg">
+    <img id="map" src="./assets/animals/pig.svg">
 </div>
 
 <style>
@@ -37,7 +37,7 @@ class AnimalMap extends HTMLElement {
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    changeMap(map="./assets/animals/pig-chart.svg") {
+    changeMap(map="./assets/animals/pig.svg") {
         this.shadowRoot.querySelector(".map-container > img").src = map;
     }
 }

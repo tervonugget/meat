@@ -43,6 +43,27 @@ class TheText extends HTMLElement {
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+    handleParticleClick(type) {
+        if (type === "pig") {
+            this.displayText("pig");
+        } else if (type === "chicken") {
+            this.displayText("chicken");
+        } else if (type === "cow") {
+            this.displayText("cow");
+        }
+    }
+    
+    displayText(type) {
+        if (type === "pig") {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is a pig.";
+        }
+        if (type === "chicken") {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is a chicken.";
+        }
+        if (type === "cow") {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is a cow.";
+        }
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements

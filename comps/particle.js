@@ -275,10 +275,6 @@ class TheParticle extends HTMLElement {
             `
         }
     }
-
-    handleParticleClick(type) {
-        console.log("handleParticleClick activated!")
-    }
 }
 
 //MUST HAVE - define the tag for the custom elements

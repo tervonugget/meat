@@ -52,6 +52,7 @@ class AnimalMenu extends HTMLElement {
         this.shadowRoot.querySelector(".menu-container").onclick = () => {
             document.querySelector("#map-bg").changeMap(`./assets/animals/${this.getAttribute("name")}.svg`);
             console.log("test")
+            document.querySelector(".par").chickenTime();
         }
     }
 

@@ -18,7 +18,7 @@ template_particle.innerHTML = `
         position: relative;
         display: grid;
         place-content: center;
-        border: 5px solid green;
+        /* border: 5px solid green; */
         z-index: 1;
         height: 15rem;
         width: 100vw;
@@ -49,7 +49,7 @@ template_particle.innerHTML = `
     }
 
     #par3 {
-        left: -5.25rem;
+        left: -5rem;
         top: 6.5rem;
     }
 
@@ -88,9 +88,17 @@ class TheParticle extends HTMLElement {
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
         this.shadowRoot.appendChild(template_particle.content.cloneNode(true)); //use the template to make a clone
+        this.currentAnimal = "pig";
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+    chickenTime() {
+        if (this.currentAnimal === "pig") {
+            this.shadowRoot.querySelector("#par1").style.cssText = `
+                background: yellow;
+            `
+        }
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements

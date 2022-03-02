@@ -12,6 +12,7 @@ template_map.innerHTML = `
         display: grid;
         place-content: center;
         z-index: -1;
+        margin: 5rem;
     }
 
     #map {

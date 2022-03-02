@@ -4,7 +4,13 @@ var template_particle = document.createElement("template"); //<template> </templ
 //To-do - CREATE THE UI HERE!
 template_particle.innerHTML = `
 <div class="particle-container">
-<div class="particle"></div>
+<div class="particle" id="par1"></div>
+<div class="particle" id="par2"></div>
+<div class="particle" id="par3"></div>
+<div class="particle" id="par4"></div>
+<div class="particle" id="par5"></div>
+<div class="particle" id="par6"></div>
+<div class="particle" id="par7"></div>
 </div>
 
 <style>
@@ -17,7 +23,7 @@ template_particle.innerHTML = `
         height: 15rem;
         width: 100vw;
         left: 0;
-        bottom: 15rem;
+        bottom: 20rem;
     }
 
     .particle {
@@ -26,13 +32,44 @@ template_particle.innerHTML = `
         width: 2rem;
         height: 2rem;
         border-radius: 1rem;
-        bottom: 5rem;
-        left: -5rem;
     }
 
     .particle:hover {
         background: green;
-        border: 0.25rem black solid;
+    }
+
+    #par1 {
+        left: -5rem;
+        top: 1rem;
+    }
+
+    #par2 {
+        left: -5rem;
+        top: 3rem;
+    }
+
+    #par3 {
+        left: -5.25rem;
+        top: 6.5rem;
+    }
+
+    #par4 {
+        bottom: 3.5rem;
+    }
+
+    #par5 {
+        left: -0.5rem;
+        bottom: 1.5rem;
+    }
+
+    #par6 {
+        bottom: 3rem;
+        left: 4rem;
+    }
+
+    #par7 {
+        bottom: 9rem;
+        left: 8rem;
     }
 </style>
 `;

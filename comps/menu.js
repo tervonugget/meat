@@ -11,13 +11,13 @@ template_menu.innerHTML = `
 
 <style>
     .menu-container {
-        display: inline-flex;
+        display: inline-block;
     }
 
     .name-container {
         background-color: #101010;
         border-radius: 40%;
-        padding: 1rem;  
+        padding: 1rem;
     }
 
     .name-container:hover {

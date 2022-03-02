@@ -11,6 +11,11 @@ template_particle.innerHTML = `
 <div class="particle" id="par5"></div>
 <div class="particle" id="par6"></div>
 <div class="particle" id="par7"></div>
+<div class="particle" id="par8"></div>
+<div class="particle" id="par9"></div>
+<div class="particle" id="par10"></div>
+<div class="particle" id="par11"></div>
+<div class="particle" id="par12"></div>
 </div>
 
 <style>
@@ -71,6 +76,26 @@ template_particle.innerHTML = `
         bottom: 9rem;
         left: 8rem;
     }
+
+    #par8 {
+        display: none;
+    }
+    
+    #par9 {
+        display: none;
+    }
+    
+    #par10 {
+        display: none;
+    }
+    
+    #par11 {
+        display: none;
+    }
+    
+    #par12 {
+        display: none;
+    }
 </style>
 `;
 
@@ -94,23 +119,159 @@ class TheParticle extends HTMLElement {
     //To-do - CREATE THE FUNCTIONALITIES HERE!
     changeParticle(type = "chicken") {
         this.currentAnimal = type;
+        if (this.currentAnimal === "pig") {
+            this.shadowRoot.querySelector("#par1").style.cssText = `
+                background: blue;
+            `
+            this.shadowRoot.querySelector("#par2").style.cssText = `
+                background: blue;
+            `
+            this.shadowRoot.querySelector("#par3").style.cssText = `
+                background: blue;
+            `
+            this.shadowRoot.querySelector("#par4").style.cssText = `
+                background: blue;
+            `
+            this.shadowRoot.querySelector("#par5").style.cssText = `
+                background: blue;
+            `
+            this.shadowRoot.querySelector("#par6").style.cssText = `
+                background: blue;
+            `
+            this.shadowRoot.querySelector("#par7").style.cssText = `
+                background: blue;
+            `
+            this.shadowRoot.querySelector("#par8").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par9").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par10").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par11").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par12").style.cssText = `
+                display: none;
+            `
+        }
         if (this.currentAnimal === "chicken") {
             this.shadowRoot.querySelector("#par1").style.cssText = `
                 background: yellow;
                 left: -4.5rem;
                 top: 2rem;
             `
-        }
-
-        if (this.currentAnimal === "pig") {
-            this.shadowRoot.querySelector("#par1").style.cssText = `
-                background: green;
+            this.shadowRoot.querySelector("#par2").style.cssText = `
+                background: yellow;
+                left: -3.5rem;
+                top: 4rem;
+            `
+            this.shadowRoot.querySelector("#par3").style.cssText = `
+                background: yellow;
+                left: 0.5rem;
+                top: -1rem;
+            `
+            this.shadowRoot.querySelector("#par4").style.cssText = `
+                background: yellow;
+                left: 0rem;
+                top: -0.75rem;
+            `
+            this.shadowRoot.querySelector("#par5").style.cssText = `
+                background: yellow;
+                left: 3.5rem;
+                top: -1rem;
+            `
+            this.shadowRoot.querySelector("#par6").style.cssText = `
+                background: yellow;
+                left: 2rem;
+                top: -1.5rem;
+            `
+            this.shadowRoot.querySelector("#par7").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par8").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par9").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par10").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par11").style.cssText = `
+                display: none;
+            `
+            this.shadowRoot.querySelector("#par12").style.cssText = `
+                display: none;
             `
         }
-        
         if (this.currentAnimal === "cow") {
             this.shadowRoot.querySelector("#par1").style.cssText = `
                 background: orange;
+                left: -2.5rem;
+                top: 7.75rem;
+            `
+            this.shadowRoot.querySelector("#par2").style.cssText = `
+                background: orange;
+                left: -2.5rem;
+                top: 9.5rem;
+            `
+            this.shadowRoot.querySelector("#par3").style.cssText = `
+                background: orange;
+                left: -2.25rem;
+                top: 10.25rem;
+            `
+            this.shadowRoot.querySelector("#par4").style.cssText = `
+                background: orange;
+                left: 1rem;
+                top: 2rem;
+            `
+            this.shadowRoot.querySelector("#par5").style.cssText = `
+                background: orange;
+                left: 0.75rem;
+                top: 3.5rem;
+            `
+            this.shadowRoot.querySelector("#par6").style.cssText = `
+                background: orange;
+                left: 3.75rem;
+                top: -2rem;
+            `
+            this.shadowRoot.querySelector("#par7").style.cssText = `
+                background: orange;
+                left: 4rem;
+                top: 0.25rem;
+            `
+            this.shadowRoot.querySelector("#par8").style.cssText = `
+                display: block;
+                background: orange;
+                left: 6rem;
+                top: -9rem;
+            `
+            this.shadowRoot.querySelector("#par9").style.cssText = `
+                display: block;
+                background: orange;
+                left: 6.25rem;
+                top: -9rem;
+            `
+            this.shadowRoot.querySelector("#par10").style.cssText = `
+                display: block;
+                background: orange;
+                left: 6rem;
+                top: -9rem;
+            `
+            this.shadowRoot.querySelector("#par11").style.cssText = `
+                display: block;
+                background: orange;
+                left: 6rem;
+                top: -9rem;
+            `
+            this.shadowRoot.querySelector("#par12").style.cssText = `
+                display: block;
+                background: orange;
+                left: 9rem;
+                top: -13rem;
             `
         }
     }

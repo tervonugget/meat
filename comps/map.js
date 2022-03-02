@@ -16,7 +16,7 @@ template_map.innerHTML = `
     }
 
     #map {
-        background-color: blue;
+        /* background-color: blue; */
         height: 15rem;
     }
 </style>

@@ -92,10 +92,25 @@ class TheParticle extends HTMLElement {
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    chickenTime() {
-        if (this.currentAnimal === "pig") {
+    changeParticle(type = "chicken") {
+        this.currentAnimal = type;
+        if (this.currentAnimal === "chicken") {
             this.shadowRoot.querySelector("#par1").style.cssText = `
                 background: yellow;
+                left: -4.5rem;
+                top: 2rem;
+            `
+        }
+
+        if (this.currentAnimal === "pig") {
+            this.shadowRoot.querySelector("#par1").style.cssText = `
+                background: green;
+            `
+        }
+        
+        if (this.currentAnimal === "cow") {
+            this.shadowRoot.querySelector("#par1").style.cssText = `
+                background: orange;
             `
         }
     }

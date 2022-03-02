@@ -3,21 +3,36 @@ var template_particle = document.createElement("template"); //<template> </templ
 
 //To-do - CREATE THE UI HERE!
 template_particle.innerHTML = `
+<div class="particle-container">
 <div class="particle"></div>
+</div>
 
 <style>
+    .particle-container {
+        position: relative;
+        display: grid;
+        place-content: center;
+        border: 5px solid green;
+        z-index: 1;
+        height: 15rem;
+        width: 100vw;
+        left: 0;
+        bottom: 15rem;
+    }
+
     .particle {
+        position: relative;
         background: red;
         width: 2rem;
         height: 2rem;
         border-radius: 1rem;
-        position: relative;
-        left: 20rem;
-        bottom: 20rem;
+        bottom: 5rem;
+        left: -5rem;
     }
 
     .particle:hover {
         background: green;
+        border: 0.25rem black solid;
     }
 </style>
 `;

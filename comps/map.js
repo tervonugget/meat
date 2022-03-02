@@ -11,11 +11,12 @@ template_map.innerHTML = `
     .map-container {
         display: grid;
         place-content: center;
+        z-index: -1;
     }
 
     #map {
         background-color: blue;
-        height: 25rem;
+        height: 15rem;
     }
 </style>
 `;

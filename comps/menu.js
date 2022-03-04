@@ -55,10 +55,20 @@ class AnimalMenu extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_menu.content.cloneNode(true)); //use the template to make a clone
         this.shadowRoot.querySelector(".name-container > #name").innerHTML = (this.getAttribute("name"))
-        this.shadowRoot.querySelector(".menu-container").onclick = () => {
+        this.shadowRoot.querySelector(".name-container > #name").onclick = () => {
             document.querySelector("#map-bg").changeMap(`./assets/animals/${this.getAttribute("name")}.svg`);
-            console.log("test")
-            document.querySelector(".par").chickenTime();
+            if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "chicken") {
+                document.querySelector(".par").changeParticle("chicken");
+                document.querySelector("#text").handleMenuClick("chicken");
+            }
+            if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "pig") {
+                document.querySelector(".par").changeParticle("pig");
+                document.querySelector("#text").handleMenuClick("pig");
+            }
+            if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "cow") {
+                document.querySelector(".par").changeParticle("cow");
+                document.querySelector("#text").handleMenuClick("cow");
+            }
         }
     }
 

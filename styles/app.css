@@ -1,5 +1,6 @@
-#par2 {
-  bottom: 15rem;
-  left: 1rem;
-  background-color: red;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -13,7 +13,7 @@ template_text.innerHTML = `
     .text-container {
         width: 80%;
         height: 10rem;
-        position: absolute;
+        position: relative;
         bottom: 15rem;
         left: 10%;
         border: 0.25rem black solid;

@@ -18,20 +18,24 @@ template_menu.innerHTML = `
     }
 
     .name-container {
-        background-color: #101010;
-        border-radius: 5%;
-        padding: 1rem;
-        margin: 20px 20px;
+        border: none;
+        padding: 0.75rem;
+        margin: 1rem 1rem;
+        border-radius: 10%;
+        box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
+        transition: all 0.5s ease 0s;
+        cursor: pointer;
     }
 
     .name-container:hover {
-        background-color: blue;
+        background-color: #2EE59D;
+        transform: translateY(-0.5rem);
     }
 
     #name {
-        color: white;
-        font-size: 2rem;
-        padding: 5px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     #name:hover {

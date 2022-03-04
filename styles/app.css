@@ -4,3 +4,9 @@ html {
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.menu_nav {
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+}

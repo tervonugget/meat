@@ -3,21 +3,25 @@ var template_menu = document.createElement("template"); //<template> </template>
 
 //To-do - CREATE THE UI HERE!
 template_menu.innerHTML = `
-<div class="menu-container">
-    <div class="name-container">
-        <div id="name">Cow</div>
+
+    <div class="menu-container">
+        <div class="name-container">
+            <div id="name">Cow</div>
+        </div>
     </div>
-</div>
+
 
 <style>
+
     .menu-container {
         display: inline-block;
     }
 
     .name-container {
         background-color: #101010;
-        border-radius: 40%;
+        border-radius: 5%;
         padding: 1rem;
+        margin: 20px 20px;
     }
 
     .name-container:hover {
@@ -26,10 +30,12 @@ template_menu.innerHTML = `
 
     #name {
         color: white;
+        font-size: 2rem;
+        padding: 5px;
     }
 
     #name:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 </style>
 `;

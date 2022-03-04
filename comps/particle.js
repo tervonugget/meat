@@ -69,7 +69,7 @@ template_particle.innerHTML = `
     }
 
     #par7 {
-        bottom: 9rem;
+        bottom: 8.75rem;
         left: 8rem;
     }
 

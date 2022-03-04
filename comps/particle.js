@@ -114,6 +114,94 @@ class TheParticle extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_particle.content.cloneNode(true)); //use the template to make a clone
         this.currentAnimal = "pig";
+
+        // Check particle, current animal, call appropriate function/text
+        this.shadowRoot.querySelector("#par1").onclick = () => {
+            if (this.currentAnimal === "pig") {
+                document.querySelector("#text").pDisplayText(1);
+            } else if (this.currentAnimal === "chicken") {
+                document.querySelector("#text").chDisplayText(1);
+            } else if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(1);
+            }
+        }
+        this.shadowRoot.querySelector("#par2").onclick = () => {
+            if (this.currentAnimal === "pig") {
+                document.querySelector("#text").pDisplayText(2);
+            } else if (this.currentAnimal === "chicken") {
+                document.querySelector("#text").chDisplayText(2);
+            } else if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(2);
+            }
+        }
+        this.shadowRoot.querySelector("#par3").onclick = () => {
+            if (this.currentAnimal === "pig") {
+                document.querySelector("#text").pDisplayText(3);
+            } else if (this.currentAnimal === "chicken") {
+                document.querySelector("#text").chDisplayText(3);
+            } else if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(3);
+            }
+        }
+        this.shadowRoot.querySelector("#par4").onclick = () => {
+            if (this.currentAnimal === "pig") {
+                document.querySelector("#text").pDisplayText(4);
+            } else if (this.currentAnimal === "chicken") {
+                document.querySelector("#text").chDisplayText(4);
+            } else if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(4);
+            }
+        }
+        this.shadowRoot.querySelector("#par5").onclick = () => {
+            if (this.currentAnimal === "pig") {
+                document.querySelector("#text").pDisplayText(5);
+            } else if (this.currentAnimal === "chicken") {
+                document.querySelector("#text").chDisplayText(5);
+            } else if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(5);
+            }
+        }
+        this.shadowRoot.querySelector("#par6").onclick = () => {
+            if (this.currentAnimal === "pig") {
+                document.querySelector("#text").pDisplayText(6);
+            } else if (this.currentAnimal === "chicken") {
+                document.querySelector("#text").chDisplayText(6);
+            } else if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(6);
+            }
+        }
+        this.shadowRoot.querySelector("#par7").onclick = () => {
+            if (this.currentAnimal === "pig") {
+                document.querySelector("#text").pDisplayText(7);
+            } else if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(7);
+            }
+        }
+        this.shadowRoot.querySelector("#par8").onclick = () => {
+            if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(8);
+            }
+        } 
+        this.shadowRoot.querySelector("#par9").onclick = () => {
+            if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(9);
+            }
+        }
+        this.shadowRoot.querySelector("#par10").onclick = () => {
+            if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(10);
+            }
+        }
+        this.shadowRoot.querySelector("#par11").onclick = () => {
+            if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(11);
+            }
+        }
+        this.shadowRoot.querySelector("#par12").onclick = () => {
+            if (this.currentAnimal === "cow") {
+                document.querySelector("#text").cDisplayText(12);
+            }
+        }
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
@@ -273,6 +361,12 @@ class TheParticle extends HTMLElement {
                 left: 9rem;
                 top: -13rem;
             `
+        }
+    }
+
+    pigParticles(animalParticle) {
+        if (animalParticle === "p1") {
+            document.querySelector("#text").pDisplayText(1);
         }
     }
 }

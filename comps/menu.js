@@ -53,15 +53,15 @@ class AnimalMenu extends HTMLElement {
             document.querySelector("#map-bg").changeMap(`./assets/animals/${this.getAttribute("name")}.svg`);
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "chicken") {
                 document.querySelector(".par").changeParticle("chicken");
-                document.querySelector("#text").handleParticleClick("chicken");
+                document.querySelector("#text").handleMenuClick("chicken");
             }
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "pig") {
                 document.querySelector(".par").changeParticle("pig");
-                document.querySelector("#text").handleParticleClick("pig");
+                document.querySelector("#text").handleMenuClick("pig");
             }
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "cow") {
                 document.querySelector(".par").changeParticle("cow");
-                document.querySelector("#text").handleParticleClick("cow");
+                document.querySelector("#text").handleMenuClick("cow");
             }
         }
     }

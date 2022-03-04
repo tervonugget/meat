@@ -43,17 +43,7 @@ class TheText extends HTMLElement {
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    handleParticleClick(type) {
-        if (type === "pig") {
-            this.displayText("pig");
-        } else if (type === "chicken") {
-            this.displayText("chicken");
-        } else if (type === "cow") {
-            this.displayText("cow");
-        }
-    }
-    
-    displayText(type) {
+    handleMenuClick(type) {
         if (type === "pig") {
             this.shadowRoot.querySelector(".text").innerHTML = "This is a pig.";
         }
@@ -62,6 +52,68 @@ class TheText extends HTMLElement {
         }
         if (type === "cow") {
             this.shadowRoot.querySelector(".text").innerHTML = "This is a cow.";
+        }
+    }
+    
+    pDisplayText(parnumber) {
+        if (parnumber === 1) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the shoulder of the pig.";
+        } else if (parnumber === 2) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the picnic of the pig.";
+        } else if (parnumber === 3) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the hock of the pig.";
+        } else if (parnumber === 4) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the loin of the pig.";
+        } else if (parnumber === 5) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the spare rib of the pig.";
+        } else if (parnumber === 6) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the side of the pig.";
+        } else if (parnumber === 7) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the ham of the pig.";
+        }
+    }
+
+    chDisplayText(parnumber) {
+        if (parnumber === 1) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the neck of the chicken.";
+        } else if (parnumber === 2) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the breast of the chicken.";
+        } else if (parnumber === 3) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the back of the chicken.";
+        } else if (parnumber === 4) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the wing of the chicken.";
+        } else if (parnumber === 5) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the thigh of the chicken.";
+        } else if (parnumber === 6) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the leg of the chicken.";
+        }
+    }
+    
+    cDisplayText(parnumber) {
+        if (parnumber === 1) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the chuck of the cow.";
+        } else if (parnumber === 2) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the breast of the cow.";
+        } else if (parnumber === 3) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the shank of the cow.";
+        } else if (parnumber === 4) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the rib of the cow.";
+        } else if (parnumber === 5) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the plate of the cow.";
+        } else if (parnumber === 6) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the shirt of the cow.";
+        } else if (parnumber === 7) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the flank of the cow.";
+        } else if (parnumber === 8) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the sirloin of the cow.";
+        } else if (parnumber === 9) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the tenderloin of the cow.";
+        } else if (parnumber === 10) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the top sirloin of the cow.";
+        } else if (parnumber === 11) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the bottom sirloin of the cow.";
+        } else if (parnumber === 12) {
+            this.shadowRoot.querySelector(".text").innerHTML = "This is the round of the cow.";
         }
     }
 }

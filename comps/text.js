@@ -13,14 +13,15 @@ template_text.innerHTML = `
     .text-container {
         width: 80%;
         height: 10rem;
-        background-color: blue;
         position: absolute;
         bottom: 15rem;
         left: 10%;
+        border: 0.25rem black solid;
+        border-radius: 1rem;
     }
 
     .text {
-        color: white;
+        color: black;
         padding: 1rem;
     }
 </style>

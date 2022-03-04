@@ -23,7 +23,6 @@ template_particle.innerHTML = `
         position: relative;
         display: grid;
         place-content: center;
-        /* border: 5px solid green; */
         z-index: 1;
         height: 15rem;
         width: 100vw;
@@ -33,42 +32,39 @@ template_particle.innerHTML = `
 
     .particle {
         position: relative;
-        background: red;
-        width: 2rem;
-        height: 2rem;
+        background: #fa8b23;
+        width: 1.5rem;
+        height: 1.5rem;
         border-radius: 1rem;
     }
 
-    .particle:hover {
-        background: green;
-    }
-
     #par1 {
-        left: -5rem;
-        top: 1rem;
+        left: -4.75rem;
+        top: 0.25rem;
     }
 
     #par2 {
-        left: -5rem;
-        top: 3rem;
+        left: -4.75rem;
+        top: 4rem;
     }
 
     #par3 {
-        left: -5rem;
+        left: -4.75rem;
         top: 6.5rem;
     }
 
     #par4 {
-        bottom: 3.5rem;
+        left: -0.5rem;
+        bottom: 4.25rem;
     }
 
     #par5 {
         left: -0.5rem;
-        bottom: 1.5rem;
+        bottom: 0.5rem;
     }
 
     #par6 {
-        bottom: 3rem;
+        bottom: 2rem;
         left: 4rem;
     }
 
@@ -205,29 +201,29 @@ class TheParticle extends HTMLElement {
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    changeParticle(type = "chicken") {
+    changeParticle(type = "pig") {
         this.currentAnimal = type;
         if (this.currentAnimal === "pig") {
             this.shadowRoot.querySelector("#par1").style.cssText = `
-                background: blue;
+                background: #fa8b23;
             `
             this.shadowRoot.querySelector("#par2").style.cssText = `
-                background: blue;
+                background: #fa8b23;
             `
             this.shadowRoot.querySelector("#par3").style.cssText = `
-                background: blue;
+                background: #fa8b23;
             `
             this.shadowRoot.querySelector("#par4").style.cssText = `
-                background: blue;
+                background: #fa8b23;
             `
             this.shadowRoot.querySelector("#par5").style.cssText = `
-                background: blue;
+                background: #fa8b23;
             `
             this.shadowRoot.querySelector("#par6").style.cssText = `
-                background: blue;
+                background: #fa8b23;
             `
             this.shadowRoot.querySelector("#par7").style.cssText = `
-                background: blue;
+                background: #fa8b23;
             `
             this.shadowRoot.querySelector("#par8").style.cssText = `
                 display: none;
@@ -248,33 +244,33 @@ class TheParticle extends HTMLElement {
         if (this.currentAnimal === "chicken") {
             this.shadowRoot.querySelector("#par1").style.cssText = `
                 background: yellow;
-                left: -4.5rem;
-                top: 2rem;
+                left: -4rem;
+                top: 1rem;
             `
             this.shadowRoot.querySelector("#par2").style.cssText = `
                 background: yellow;
-                left: -3.5rem;
-                top: 4rem;
+                left: -4rem;
+                top: 2.5rem;
             `
             this.shadowRoot.querySelector("#par3").style.cssText = `
                 background: yellow;
-                left: 0.5rem;
-                top: -1rem;
+                left: 0rem;
+                top: -1.25rem;
             `
             this.shadowRoot.querySelector("#par4").style.cssText = `
                 background: yellow;
                 left: 0rem;
-                top: -0.75rem;
+                top: -0.5rem;
             `
             this.shadowRoot.querySelector("#par5").style.cssText = `
                 background: yellow;
-                left: 3.5rem;
-                top: -1rem;
+                left: 0rem;
+                top: 1rem;
             `
             this.shadowRoot.querySelector("#par6").style.cssText = `
                 background: yellow;
                 left: 2rem;
-                top: -1.5rem;
+                top: -0.5rem;
             `
             this.shadowRoot.querySelector("#par7").style.cssText = `
                 display: none;
@@ -297,69 +293,69 @@ class TheParticle extends HTMLElement {
         }
         if (this.currentAnimal === "cow") {
             this.shadowRoot.querySelector("#par1").style.cssText = `
-                background: orange;
-                left: -2.5rem;
-                top: 7.75rem;
+                background: lightgreen;
+                left: -2.25rem;
+                top: 5rem;
             `
             this.shadowRoot.querySelector("#par2").style.cssText = `
-                background: orange;
-                left: -2.5rem;
-                top: 9.5rem;
+                background: lightgreen;
+                left: -2.25rem;
+                top: 7.5rem;
             `
             this.shadowRoot.querySelector("#par3").style.cssText = `
-                background: orange;
+                background: lightgreen;
                 left: -2.25rem;
-                top: 10.25rem;
+                top: 8.75rem;
             `
             this.shadowRoot.querySelector("#par4").style.cssText = `
-                background: orange;
+                background: lightgreen;
                 left: 1rem;
-                top: 2rem;
+                top: 0.5rem;
             `
             this.shadowRoot.querySelector("#par5").style.cssText = `
-                background: orange;
-                left: 0.75rem;
-                top: 3.5rem;
+                background: lightgreen;
+                left: 1rem;
+                top: 3rem;
             `
             this.shadowRoot.querySelector("#par6").style.cssText = `
-                background: orange;
+                background: lightgreen;
                 left: 3.75rem;
-                top: -2rem;
+                top: -2.5rem;
             `
             this.shadowRoot.querySelector("#par7").style.cssText = `
-                background: orange;
-                left: 4rem;
-                top: 0.25rem;
+                background: lightgreen;
+                left: 3.75rem;
+                top: 0rem;
             `
             this.shadowRoot.querySelector("#par8").style.cssText = `
                 display: block;
-                background: orange;
+                background: lightgreen;
                 left: 6rem;
-                top: -9rem;
+                top: -8rem;
             `
             this.shadowRoot.querySelector("#par9").style.cssText = `
                 display: block;
-                background: orange;
-                left: 6.25rem;
-                top: -9rem;
+                background: lightgreen;
+                left: 6rem;
+                top: -7.75rem;
             `
             this.shadowRoot.querySelector("#par10").style.cssText = `
                 display: block;
-                background: orange;
+                background: lightgreen;
                 left: 6rem;
-                top: -9rem;
+                top: -7.5rem;
             `
             this.shadowRoot.querySelector("#par11").style.cssText = `
                 display: block;
-                background: orange;
+                background: lightgreen;
                 left: 6rem;
-                top: -9rem;
+                top: -7.25rem;
             `
             this.shadowRoot.querySelector("#par12").style.cssText = `
                 display: block;
-                background: orange;
+                background: lightgreen;
                 left: 9rem;
-                top: -13rem;
+                top: -11.5rem;
             `
         }
     }

@@ -74,6 +74,7 @@ class AnimalMenu extends HTMLElement {
                 document.querySelector("#text").handleMenuClick("cow");
             }
         }
+
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!

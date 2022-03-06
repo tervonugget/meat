@@ -38,6 +38,12 @@ template_particle.innerHTML = `
         border-radius: 1rem;
     }
 
+    .particle:hover {
+        background-color: white;
+    }
+
+    
+
     #par1 {
         left: -4.75rem;
         top: 0.25rem;
@@ -198,6 +204,7 @@ class TheParticle extends HTMLElement {
                 document.querySelector("#text").cDisplayText(12);
             }
         }
+
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
@@ -358,6 +365,7 @@ class TheParticle extends HTMLElement {
                 top: -11.5rem;
             `
         }
+
     }
 
     pigParticles(animalParticle) {

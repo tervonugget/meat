@@ -51,11 +51,15 @@ class TheCalculation extends HTMLElement {
   //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
   connectedCallback() {
     this.shadowRoot.appendChild(template_calc.content.cloneNode(true)); //use the template to make a clone
+    this.timer = null;
   }
 
   //To-do - CREATE THE FUNCTIONALITIES HERE!
   deathInterval(type) {
-    setInterval(this.deathCount(type), 1000);
+    if (this.timer != null) {
+      clearInterval(this.timer);
+    }
+    this.timer = setInterval(()=>this.deathCount(type), 1000);
   }
 
   deathCount(type) {
@@ -66,6 +70,7 @@ class TheCalculation extends HTMLElement {
       console.log(count);
       this.shadowRoot.querySelector('#death-number').innerHTML = count;
     }
+    // setInterval(this.deathCount(type), 1000);
   }
 }
 

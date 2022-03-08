@@ -46,7 +46,7 @@ template_carcass.innerHTML = `
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 700px) {
     #carcass-text {
       font-size: 60px;
     }
@@ -73,7 +73,6 @@ class TheCarcass extends HTMLElement {
   changeCarcass(type) {
     let image = this.shadowRoot.querySelector("#carcass");
     if (type === "pig") {
-      console.log("pig");
       image.src = "./assets/animals/pig-carcass.svg";
     } else if (type === "chicken") {
       image.src = "./assets/animals/chicken-carcass.svg";

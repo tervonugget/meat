@@ -6,7 +6,7 @@ template_carcass.innerHTML = `
 
 <div class="carcass-container">
   <img id="carcass" src="./assets/animals/pig-carcass.svg">
-  <p id="carcass-text">The average person eats 27 pigs in their lifetime.</p>
+  <p id="carcass-text">The average person eats <span id="animalNumber">27</span> pigs in their lifetime.</p>
 </div>
 
 <style>
@@ -23,7 +23,9 @@ template_carcass.innerHTML = `
     max-height: 100vh;
     opacity: 50%;
     filter: drop-shadow(0.5rem 0.5rem 0.5rem black);
-
+    animation: 5s infinite alternate sway ease;
+    z-index: -1;
+    transform-origin: 50% 0px;
   }
 
   #carcass-text {
@@ -31,10 +33,22 @@ template_carcass.innerHTML = `
     font-weight: bold;
     position: relative;
     bottom: 45rem;
+    color: black;
+  }
+
+  #animalNumber {
     color: white;
     filter: drop-shadow(0.5rem 0.5rem 0.5rem black);
   }
 
+  @keyframes sway {
+    from {
+      transform: rotate(0deg);
+    } 
+    to {
+      transform: rotate(-5deg);
+    }
+  }
 </style>
 `;
 

@@ -32,13 +32,13 @@ template_carcass.innerHTML = `
     font-size: 5rem;
     font-weight: bold;
     position: relative;
-    bottom: 45rem;
-    color: black;
+    bottom: 40rem;
+    color: white;
+    filter: drop-shadow(0 0 0.75rem crimson);
   }
 
   #animalNumber {
-    color: white;
-    filter: drop-shadow(0.5rem 0.5rem 0.5rem black);
+    color: crimson;
   }
 
   @keyframes sway {
@@ -47,6 +47,12 @@ template_carcass.innerHTML = `
     } 
     to {
       transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #carcass-text {
+      font-size: 60px;
     }
   }
 </style>

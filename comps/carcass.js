@@ -45,12 +45,6 @@ template_carcass.innerHTML = `
       transform: rotate(-5deg);
     }
   }
-
-  @media screen and (max-width: 700px) {
-    #carcass-text {
-      font-size: 60px;
-    }
-  }
 </style>
 `;
 

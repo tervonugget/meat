@@ -1,0 +1,67 @@
+//MUST HAVE - CREATE A TEMPLATE TAG
+var template_calc = document.createElement('template'); //<template> </template> RULE
+
+//To-do - CREATE THE UI HERE!
+template_calc.innerHTML = `
+
+<div class="calc-text">
+  In the time you've spent on this site,
+</div>
+<div id="death-number">
+  0
+</div>
+<div class="calc-text">
+  have been killed.
+</div>
+
+<style>
+  #death-number {
+    font-size: 5rem;
+    font-weight: bold;
+    color: red;
+  }
+
+  .calc-text {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+</style>
+`;
+
+//MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
+class TheCalculation extends HTMLElement {
+  //MUST HAVE - CREATE A CONSTRUCTOR TO DO INITAL ASSOCIATIONS
+  constructor() {
+    super(); //pass on the HTMLElement super powers!
+    this.attachShadow({ mode: 'open' }); //Attach it to the shadowRoot
+
+    //To-do - CREATE THE STATES FOR THE UI HERE!
+  }
+
+  //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
+  connectedCallback() {
+    this.shadowRoot.appendChild(template_calc.content.cloneNode(true)); //use the template to make a clone
+  }
+
+  //To-do - CREATE THE FUNCTIONALITIES HERE!
+  deathCount(type) {
+    let count = this.shadowRoot.querySelector('#death-number').innerHTML;
+    if (type === "pig") {
+      count = Number(count);
+      count = count + 47;
+      console.log(count);
+      this.shadowRoot.querySelector("#death-number").innerHTML = (count);
+    }
+    
+  }
+  deathInterval(type) {
+      let interval = setInterval(this.deathCount(type));
+      interval();
+  } 
+
+
+
+}
+
+//MUST HAVE - define the tag for the custom elements
+customElements.define('the-calculation', TheCalculation);

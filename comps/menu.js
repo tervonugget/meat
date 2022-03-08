@@ -68,10 +68,13 @@ class AnimalMenu extends HTMLElement {
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "pig") {
                 document.querySelector(".par").changeParticle("pig");
                 document.querySelector("#text").handleMenuClick("pig");
+                document.querySelector('#calc').deathInterval('pig');
+
             }
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "cow") {
                 document.querySelector(".par").changeParticle("cow");
                 document.querySelector("#text").handleMenuClick("cow");
+
             }
         }
 

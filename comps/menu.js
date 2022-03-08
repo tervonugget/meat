@@ -78,7 +78,6 @@ class AnimalMenu extends HTMLElement {
                 document.querySelector('#calc').deathInterval("pig");
                 document.querySelector("#carcass").changeCarcass("pig");
                 document.querySelector("#carcass").changeCarcassText("pig");
-            }
 
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "cow") {
                 document.querySelector(".par").changeParticle("cow");

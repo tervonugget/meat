@@ -74,6 +74,17 @@ class TheCarcass extends HTMLElement {
   }
 
   //To-do - CREATE THE FUNCTIONALITIES HERE!
+  changeCarcass(type) {
+    let image = this.shadowRoot.querySelector("#carcass");
+    if (type === "pig") {
+      console.log("pig");
+      // this.shadowRoot.getElementById("#carcass").img = "./assets/animals/pig-carcass.svg";
+      image.src = "./assets/animals/pig-carcass.svg";
+    } else if (type === "chicken") {
+      console.log("chicken");
+      image.src = "./assets/animals/chicken-carcass.svg";
+    }
+  }
 }
 
 //MUST HAVE - define the tag for the custom elements

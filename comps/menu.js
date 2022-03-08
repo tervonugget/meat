@@ -64,11 +64,14 @@ class AnimalMenu extends HTMLElement {
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "chicken") {
                 document.querySelector(".par").changeParticle("chicken");
                 document.querySelector("#text").handleMenuClick("chicken");
+                document.querySelector('#carcass').changeCarcass("chicken");
+
             }
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "pig") {
                 document.querySelector(".par").changeParticle("pig");
                 document.querySelector("#text").handleMenuClick("pig");
-                document.querySelector('#calc').deathInterval('pig');
+                document.querySelector('#calc').deathInterval("pig");
+                document.querySelector("#carcass").changeCarcass("pig");
 
             }
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "cow") {

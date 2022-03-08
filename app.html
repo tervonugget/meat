@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meat</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
     <script src="./comps/menu.js"></script>
     <script src="./comps/map.js"></script>
     <script src="./comps/particle.js"></script>
     <script src="./comps/text.js"></script>
-    <link rel="stylesheet" href="./styles/app.css">
-</head>
-<body>
-
+    <script src="./comps/calculation.js"></script>
+    <script src="./comps/carcass.js"></script>
+    <link rel="stylesheet" href="./styles/app.css" />
+  </head>
+  <body>
+    
     <div class="menu_nav">
-        <animal-menu
-            name="pig"
-        ></animal-menu>
-        <animal-menu
-            name="chicken"
-        ></animal-menu>
-        <animal-menu
-            name="cow"
-        ></animal-menu>
+      <animal-menu name="pig"></animal-menu>
+      <animal-menu name="chicken"></animal-menu>
+      <animal-menu name="cow"></animal-menu>
     </div>
-        <animal-map
-            animal="pig"
-            id="map-bg"
-        ></animal-map>
-    
-    <!-- Particles -->
 
-    <the-particle
-        class="par"
-    ></the-particle>
+    <animal-map animal="pig" id="map-bg"></animal-map>
 
-    <the-text
-    id="text"
-    ></the-text>
+    <the-particle class="par"></the-particle>
 
-    
+    <the-text id="text"></the-text>
 
-</body>
+    <the-calculation id="calc"></the-calculation>
+
+    <the-carcass id="carcass"></the-carcass>
+
+  </body>
 </html>

@@ -56,6 +56,7 @@ class TheCalculation extends HTMLElement {
 
   //To-do - CREATE THE FUNCTIONALITIES HERE!
   deathInterval(type) {
+    this.shadowRoot.querySelector("#death-number").innerHTML = 0;
     if (this.timer != null) {
       clearInterval(this.timer);
     }
@@ -70,7 +71,6 @@ class TheCalculation extends HTMLElement {
       console.log(count);
       this.shadowRoot.querySelector('#death-number').innerHTML = count;
     }
-    // setInterval(this.deathCount(type), 1000);
   }
 }
 

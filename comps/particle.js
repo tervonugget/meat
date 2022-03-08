@@ -37,13 +37,7 @@ template_particle.innerHTML = `
         height: 1.5rem;
         border-radius: 1rem;
     }
-
-    .particle:hover {
-        background-color: white;
-    }
-
     
-
     #par1 {
         left: -4.75rem;
         top: 0.25rem;
@@ -121,87 +115,203 @@ class TheParticle extends HTMLElement {
         this.shadowRoot.querySelector("#par1").onclick = () => {
             if (this.currentAnimal === "pig") {
                 document.querySelector("#text").pDisplayText(1);
+                this.shadowRoot.querySelector("#par1").style.cssText = `
+                background:blue;
+                `
             } else if (this.currentAnimal === "chicken") {
                 document.querySelector("#text").chDisplayText(1);
+                this.shadowRoot.querySelector("#par1").style.cssText = `
+                background:blue;
+                left: -4rem;
+                top: 1rem;
+                `
             } else if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(1);
+                this.shadowRoot.querySelector("#par1").style.cssText = `
+                background:blue;
+                left: -2.25rem;
+                top: 5rem;
+            `
             }
         }
         this.shadowRoot.querySelector("#par2").onclick = () => {
             if (this.currentAnimal === "pig") {
                 document.querySelector("#text").pDisplayText(2);
+                this.shadowRoot.querySelector("#par2").style.cssText = `
+                background:blue;
+                `
             } else if (this.currentAnimal === "chicken") {
                 document.querySelector("#text").chDisplayText(2);
+                this.shadowRoot.querySelector("#par2").style.cssText = `
+                background:blue;
+                left: -4rem;
+                top: 2.5rem;
+                `
             } else if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(2);
+                this.shadowRoot.querySelector("#par2").style.cssText = `
+                background:blue;
+                left: -2.25rem;
+                top: 7.5rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par3").onclick = () => {
             if (this.currentAnimal === "pig") {
                 document.querySelector("#text").pDisplayText(3);
+                this.shadowRoot.querySelector("#par3").style.cssText = `
+                background:blue;
+                `
             } else if (this.currentAnimal === "chicken") {
                 document.querySelector("#text").chDisplayText(3);
+                this.shadowRoot.querySelector("#par3").style.cssText = `
+                background:blue;
+                left: 0rem;
+                top: -1.25rem;
+                `
             } else if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(3);
+                this.shadowRoot.querySelector("#par3").style.cssText = `
+                background:blue;
+                left: -2.25rem;
+                top: 8.75rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par4").onclick = () => {
             if (this.currentAnimal === "pig") {
                 document.querySelector("#text").pDisplayText(4);
+                this.shadowRoot.querySelector("#par4").style.cssText = `
+                background:blue;
+                `
             } else if (this.currentAnimal === "chicken") {
                 document.querySelector("#text").chDisplayText(4);
+                this.shadowRoot.querySelector("#par4").style.cssText = `
+                background:blue;
+                left: 0rem;
+                top: -0.5rem;
+                `
             } else if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(4);
+                this.shadowRoot.querySelector("#par4").style.cssText = `
+                background:blue;
+                left: 1rem;
+                top: 0.5rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par5").onclick = () => {
             if (this.currentAnimal === "pig") {
                 document.querySelector("#text").pDisplayText(5);
+                this.shadowRoot.querySelector("#par5").style.cssText = `
+                background:blue;
+                `
             } else if (this.currentAnimal === "chicken") {
                 document.querySelector("#text").chDisplayText(5);
+                this.shadowRoot.querySelector("#par5").style.cssText = `
+                background:blue;
+                left: 0rem;
+                top: 1rem;
+                `
             } else if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(5);
+                this.shadowRoot.querySelector("#par5").style.cssText = `
+                background:blue;
+                left: 1rem;
+                top: 3rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par6").onclick = () => {
             if (this.currentAnimal === "pig") {
                 document.querySelector("#text").pDisplayText(6);
+                this.shadowRoot.querySelector("#par6").style.cssText = `
+                background:blue;
+                `
             } else if (this.currentAnimal === "chicken") {
                 document.querySelector("#text").chDisplayText(6);
+                this.shadowRoot.querySelector("#par6").style.cssText = `
+                background:blue;
+                left: 2rem;
+                top: -0.5rem;
+                `
             } else if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(6);
+                this.shadowRoot.querySelector("#par6").style.cssText = `
+                background:blue;
+                left: 3.75rem;
+                top: -2.5rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par7").onclick = () => {
             if (this.currentAnimal === "pig") {
                 document.querySelector("#text").pDisplayText(7);
+                this.shadowRoot.querySelector("#par7").style.cssText = `
+                background:blue;
+                `
             } else if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(7);
+                this.shadowRoot.querySelector("#par7").style.cssText = `
+                background:blue;
+                left: 3.75rem;
+                top: 0rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par8").onclick = () => {
             if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(8);
+                this.shadowRoot.querySelector("#par8").style.cssText = `
+                display:block;
+                background:blue;
+                left: 6rem;
+                top: -8rem;
+                `
             }
         } 
         this.shadowRoot.querySelector("#par9").onclick = () => {
             if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(9);
+                this.shadowRoot.querySelector("#par9").style.cssText = `
+                display:block;
+                background:blue;
+                left: 6rem;
+                top: -7.75rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par10").onclick = () => {
             if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(10);
+                this.shadowRoot.querySelector("#par10").style.cssText = `
+                display:block;
+                background:blue;
+                left: 6rem;
+                top: -7.5rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par11").onclick = () => {
             if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(11);
+                this.shadowRoot.querySelector("#par11").style.cssText = `
+                display:block;
+                background:blue;
+                left: 6rem;
+                top: -7.25rem;
+                `
             }
         }
         this.shadowRoot.querySelector("#par12").onclick = () => {
             if (this.currentAnimal === "cow") {
                 document.querySelector("#text").cDisplayText(12);
+                this.shadowRoot.querySelector("#par12").style.cssText = `
+                display:block;
+                background:blue;
+                left: 9rem;
+                top: -11.5rem;
+                `
             }
         }
 

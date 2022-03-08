@@ -53,6 +53,7 @@ class AnimalMenu extends HTMLElement {
         this.attachShadow({mode:"open"}) //Attach it to the shadowRoot
 
         //To-do - CREATE THE STATES FOR THE UI HERE!
+        
     }
 
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
@@ -73,11 +74,13 @@ class AnimalMenu extends HTMLElement {
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "pig") {
                 document.querySelector(".par").changeParticle("pig");
                 document.querySelector("#text").handleMenuClick("pig");
+            } 
                 document.querySelector('#calc').deathInterval("pig");
                 document.querySelector("#carcass").changeCarcass("pig");
                 document.querySelector("#carcass").changeCarcassText("pig");
 
             }
+
             if (this.shadowRoot.querySelector(".name-container > #name").innerHTML === "cow") {
                 document.querySelector(".par").changeParticle("cow");
                 document.querySelector("#text").handleMenuClick("cow");
@@ -87,11 +90,49 @@ class AnimalMenu extends HTMLElement {
                 
 
             }
+            this.changeMenuBg();  
         }
 
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+    changeMenuBg(type = 'pig') {
+        this.shadowRoot.querySelector(".name-container").style.cssText = `
+        background: #2EE59D;
+        `
+
+        if(this.getAttribute("name")==='pig'){
+            document.querySelector("#cow").resetBG();
+            document.querySelector("#chicken").resetBG();
+            //reset chicken as well
+        }
+
+        if(this.getAttribute("name")==='chicken'){
+            document.querySelector("#pig").resetBG();
+            document.querySelector("#cow").resetBG();
+        }
+
+        if(this.getAttribute("name")==='cow'){
+            document.querySelector("#pig").resetBG();
+            document.querySelector("#chicken").resetBG();
+        }
+    // } else if (this.currentAnimal != type) {
+    //     this.shadowRoot.querySelector(".name-container").style.cssText = `
+    //     bacground: #FFFFFF;
+    //     `
+    // }
+    
+    
+    console.log("hi");
+    
+    }
+
+    resetBG(){
+        //resets the background color to white
+        this.shadowRoot.querySelector(".name-container").style.cssText = `
+        background: #fffff;
+        `
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements

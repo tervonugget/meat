@@ -12,7 +12,7 @@ template_calc.innerHTML = `
   <div id="death-number">
     0
   </div>
-  <div class="calc-text">
+  <div class="calc-text" id="animalKilled">
     pigs have been killed.
   </div>
   </div>
@@ -61,6 +61,13 @@ class TheCalculation extends HTMLElement {
       clearInterval(this.timer);
     }
     this.timer = setInterval(()=>this.deathCount(type), 1000);
+    if (type === "pig") {
+      this.shadowRoot.querySelector("#animalKilled").innerHTML = "pigs have been killed."
+    } else if (type === "chicken") {
+      this.shadowRoot.querySelector("#animalKilled").innerHTML = "chickens have been killed."
+    } else if (type === "cow") {
+      this.shadowRoot.querySelector("#animalKilled").innerHTML = "cows have been killed."
+    } 
   }
 
   deathCount(type) {
@@ -68,6 +75,16 @@ class TheCalculation extends HTMLElement {
     if (type === 'pig') {
       count = Number(count);
       count = count + 47;
+      console.log(count);
+      this.shadowRoot.querySelector('#death-number').innerHTML = count;
+    } else if (type === 'chicken') {
+      count = Number(count);
+      count = count + 1581;
+      console.log(count);
+      this.shadowRoot.querySelector('#death-number').innerHTML = count;
+    } else if (type === 'cow') {
+      count = Number(count);
+      count = count + 9;
       console.log(count);
       this.shadowRoot.querySelector('#death-number').innerHTML = count;
     }

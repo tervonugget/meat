@@ -6,7 +6,7 @@ template_carcass.innerHTML = `
 
 <div class="carcass-container">
   <img id="carcass" src="./assets/animals/pig-carcass.svg">
-  <p id="carcass-text">The average person eats <span id="animalNumber">27</span> pigs in their lifetime.</p>
+  <p class="carcass-text">The average person eats 27 pigs in their lifetime.</p>
 </div>
 
 <style>
@@ -28,17 +28,13 @@ template_carcass.innerHTML = `
     transform-origin: 50% 0px;
   }
 
-  #carcass-text {
+  .carcass-text {
     font-size: 5rem;
     font-weight: bold;
     position: relative;
     bottom: 40rem;
     color: white;
     filter: drop-shadow(0 0 0.75rem crimson);
-  }
-
-  #animalNumber {
-    color: crimson;
   }
 
   @keyframes sway {
@@ -78,13 +74,22 @@ class TheCarcass extends HTMLElement {
     let image = this.shadowRoot.querySelector("#carcass");
     if (type === "pig") {
       console.log("pig");
-      // this.shadowRoot.getElementById("#carcass").img = "./assets/animals/pig-carcass.svg";
       image.src = "./assets/animals/pig-carcass.svg";
     } else if (type === "chicken") {
-      console.log("chicken");
       image.src = "./assets/animals/chicken-carcass.svg";
     }
   }
+
+  changeCarcassText(type) {
+    if (type === "pig") {
+      this.shadowRoot.querySelector(".carcass-text").innerHTML = "The average person eats 27 pigs in their lifetime.";
+    } else if (type === "chicken") {
+        this.shadowRoot.querySelector('.carcass-text').innerHTML = "The average person eats 2400 chickens in their lifetime.";
+    } else if (type === "cow") {
+        this.shadowRoot.querySelector('.carcass-text').innerHTML = "The average person eats 11 cows in their lifetime.";
+    }
+  }
+
 }
 
 //MUST HAVE - define the tag for the custom elements

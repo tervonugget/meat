@@ -4,19 +4,23 @@ var template_calc = document.createElement('template'); //<template> </template>
 //To-do - CREATE THE UI HERE!
 template_calc.innerHTML = `
 
-<div class="calc-text">
-  In the time you've spent on this site,
-</div>
-<div id="death-number">
-  0
-</div>
-<div class="calc-text">
-  have been killed.
+<div class="calc-container">
+  <div class="invert">
+  <div class="calc-text">
+    In the time you've spent on this site,
+  </div>
+  <div id="death-number">
+    0
+  </div>
+  <div class="calc-text">
+    pigs have been killed.
+  </div>
+  </div>
 </div>
 
 <style>
   #death-number {
-    font-size: 5rem;
+    font-size: 8rem;
     font-weight: bold;
     color: red;
   }
@@ -24,6 +28,12 @@ template_calc.innerHTML = `
   .calc-text {
     font-size: 3rem;
     font-weight: bold;
+    color: white;
+  }
+
+  .calc-container {
+    background-color: #202020;
+    padding: 5rem;
   }
 </style>
 `;
@@ -44,23 +54,19 @@ class TheCalculation extends HTMLElement {
   }
 
   //To-do - CREATE THE FUNCTIONALITIES HERE!
+  deathInterval(type) {
+    setInterval(this.deathCount(type), 1000);
+  }
+
   deathCount(type) {
     let count = this.shadowRoot.querySelector('#death-number').innerHTML;
-    if (type === "pig") {
+    if (type === 'pig') {
       count = Number(count);
       count = count + 47;
       console.log(count);
-      this.shadowRoot.querySelector("#death-number").innerHTML = (count);
+      this.shadowRoot.querySelector('#death-number').innerHTML = count;
     }
-    
   }
-  deathInterval(type) {
-      let interval = setInterval(this.deathCount(type));
-      interval();
-  } 
-
-
-
 }
 
 //MUST HAVE - define the tag for the custom elements

@@ -5,7 +5,7 @@ var template_text = document.createElement("template"); //<template> </template>
 template_text.innerHTML = `
 <div class="text-container">
     <div class="text">
-        This is a test. 
+        Click a particle. 
     </div>
 </div>
 
@@ -46,7 +46,7 @@ class TheText extends HTMLElement {
     //To-do - CREATE THE FUNCTIONALITIES HERE!
     handleMenuClick(type) {
         if (type === "pig") {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is a pig.";
+            this.shadowRoot.querySelector(".text").innerHTML = "Pigs are also knows as hogs or swine. Traditionally, male pigs are called boars and females are called sows.";
         }
         if (type === "chicken") {
             this.shadowRoot.querySelector(".text").innerHTML = "This is a chicken.";

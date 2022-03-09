@@ -23,7 +23,7 @@ template_carcass.innerHTML = `
     max-height: 100vh;
     opacity: 50%;
     filter: drop-shadow(0.5rem 0.5rem 0.5rem black);
-    animation: 5s infinite alternate sway ease;
+    animation: 4s infinite alternate sway ease;
     z-index: -1;
     transform-origin: 50% 0px;
   }

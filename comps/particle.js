@@ -117,7 +117,7 @@ class TheParticle extends HTMLElement {
             if (this.currentAnimal === "pig") {
                 document.querySelector("#text").pDisplayText(1);
                 this.shadowRoot.querySelector("#par1").style.cssText = `
-                background:blue;
+                background: blue;
                 `
             } else if (this.currentAnimal === "chicken") {
                 document.querySelector("#text").chDisplayText(1);

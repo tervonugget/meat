@@ -8,9 +8,9 @@ template_scrollcont.innerHTML = `
     #cont {
         position:relative;
         left:0;
-        top:65rem;
+        top:60rem;
         width:100vw;
-        height:80vh;
+        height:100vh;
         overflow-y:auto;
         overflow-x:none;
     }

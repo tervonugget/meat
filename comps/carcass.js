@@ -70,6 +70,8 @@ class TheCarcass extends HTMLElement {
       image.src = "./assets/animals/pig-carcass.svg";
     } else if (type === "chicken") {
       image.src = "./assets/animals/chicken-carcass.svg";
+    } else if (type === "cow") {
+      image.src = "./assets/animals/cow-carcass.svg";
     }
   }
 

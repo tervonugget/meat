@@ -82,6 +82,8 @@ class AnimalMenu extends HTMLElement {
                 document.querySelector("#text").handleMenuClick("cow");
                 document.querySelector('#carcass').changeCarcassText("cow");
                 document.querySelector('#calc').deathInterval("cow"); 
+                document.querySelector("#carcass").changeCarcass("cow");
+                document.querySelector("#carcass").changeCarcassText("cow");
             }
             this.changeMenuBg();  
         }

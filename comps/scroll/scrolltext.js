@@ -30,16 +30,15 @@ h2 {
 </style>
     <h1 class='head'>HOW CAN YOU HELP?</h1>
     <h2 
-    class='subhead'>You don’t have to cut out meat entirely to make a difference.
-    <br>
-    <br>
+    class='subhead'>You don’t have to force yourself to be vegan to make a difference.
+    <br><br>
     By making small sacrifices and making conscious purchasing decisions, we can all contribute to a better world.
-    <br>
-    <br>
-    Opt for products from animals that haven't been tortured. When purchasing meat, egg, or dairy products,
-    <br>
-    <br>
-    Eliminate one animal product from one meal each day (e.g. drop the sausage at breakfast, grilled chicken from your salad, or bacon from your club sandwich).
+    <br><br>
+    Substitute some of your meat with plant based alternatives. Try getting the plant based burger instead of your usual beef or chicken burger
+    <br><br>
+    Donate to animal protection organizations that focus on helping farm animals. These organizations help defend the horrific treatment and suffering of these animals.
+    <br><br>
+    Spread the awareness. More than a third of children don’t know how our meat is processed, educating them at a young age will let them be more aware of how their meat ends up on their plate.
     </h2>
 `;
 

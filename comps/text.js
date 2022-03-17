@@ -98,7 +98,7 @@ class TheText extends HTMLElement {
         } else if (parnumber === 3) {
             this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the shank of the cow.</strong> The leg portion of the animal. Due to constant use of this muscle, this meat tends to be tough, dry, and sinewy. The shank is a very lean cut of meat and can be found in stew dishes and in low-fat ground-beef.";
         } else if (parnumber === 4) {
-            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the rib of the cow.</strong> There are essentially three types of beef ribs. This region contains the chuck short ribs. You won’t get the most tender meat from this area but it is sure packed with flavour.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the rib of the cow.</strong> Beef ribs can be categorised into three types. This region contains the chuck short ribs. You won’t get the most tender meat from this area but it is sure packed with flavour.";
         } else if (parnumber === 5) {
             this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the plate of the cow.</strong> This meat is typically tougher, fattier, and cheaper. It can be used as two types of steak - skirt and hanger. It can also be smoked, cured, or used for ground beef.";
         } else if (parnumber === 6) {

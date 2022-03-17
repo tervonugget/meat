@@ -58,35 +58,35 @@ class TheText extends HTMLElement {
     
     pDisplayText(parnumber) {
         if (parnumber === 1) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the shoulder of the pig.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the pig shoulder.</strong> It's the top portion of the shoulder. It is commonly referred to as the Boston butt.";
         } else if (parnumber === 2) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the picnic of the pig.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the picnic of the pig.</strong> It's a muscular piece of meat located directly underneath the Boston butt.";
         } else if (parnumber === 3) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the hock of the pig.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the hock of the pig.</strong> This is the lower part of the leg, just above the hooves.";
         } else if (parnumber === 4) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the loin of the pig.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the loin of the pig.</strong> It's the most tender part of the pig. Loin chops are cut from this area (duh).";
         } else if (parnumber === 5) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the spare rib of the pig.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>These are the spare ribs of the pig.</strong> The spare ribs are about 11 to 13 bones that are removed from the pig's belly and breastbone area.";
         } else if (parnumber === 6) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the side of the pig.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the side of the pig.</strong> This is where bacon comes from.";
         } else if (parnumber === 7) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the ham of the pig.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the ham of the pig.</strong> Ham is a cut taken from the pig's hind leg.";
         }
     }
 
     chDisplayText(parnumber) {
         if (parnumber === 1) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the neck of the chicken.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the neck of the chicken.</strong> The saggy skin that hangs underneath the neck is called the wattle.";
         } else if (parnumber === 2) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the breast of the chicken.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the breast of the chicken.</strong> It's the chicken's pectoral muscles.";
         } else if (parnumber === 3) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the back of the chicken.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the back of the chicken.</strong> It's the bony side opposite the breast.";
         } else if (parnumber === 4) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the wing of the chicken.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the wing of the chicken.</strong> Chicken wings have three distinct parts; the drumette, the wingette, and the tip.";
         } else if (parnumber === 5) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the thigh of the chicken.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the thigh of the chicken.</strong> It's the top part of the chicken leg.";
         } else if (parnumber === 6) {
-            this.shadowRoot.querySelector(".text").innerHTML = "This is the leg of the chicken.";
+            this.shadowRoot.querySelector(".text").innerHTML = "<strong>This is the lower leg of the chicken.</strong> This is where the drumstick comes from. It's the lower calf section of the leg.";
         }
     }
     

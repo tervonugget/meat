@@ -29,12 +29,13 @@ template_carcass.innerHTML = `
   }
 
   .carcass-text {
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: bold;
     position: relative;
-    bottom: 40rem;
+    bottom: 57rem;
     color: white;
-    filter: drop-shadow(0 0 0.75rem crimson);
+    background-color: black;
+    padding: 1rem;
   }
 
   @keyframes sway {

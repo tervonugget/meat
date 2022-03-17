@@ -33,7 +33,9 @@ template_calc.innerHTML = `
 
   .calc-container {
     background-color: #202020;
-    padding: 5rem;
+    padding: 4rem;
+    position: relative;
+    bottom: 10rem;
   }
 </style>
 `;

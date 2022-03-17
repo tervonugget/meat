@@ -5,7 +5,7 @@ var template_text = document.createElement("template"); //<template> </template>
 template_text.innerHTML = `
 <div class="text-container">
     <div class="text">
-        Click a particle. 
+        Select an animal and click a particle. 
     </div>
 </div>
 
